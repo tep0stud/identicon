@@ -1,0 +1,8 @@
+scm-api:0.2
+git-client:1.16.1
+git:2.3.5
+greenballs:1.14
+mailer:1.11
+matrix-project:1.4
+ssh-credentials:1.10
+credentials:1.22
