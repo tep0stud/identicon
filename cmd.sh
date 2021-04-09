@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-ls 
+ls /app
 if [ "$ENV" = 'DEV' ]; then
     echo "Running Development Server"
     exec python users.py
