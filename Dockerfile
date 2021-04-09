@@ -4,7 +4,7 @@ RUN pip install -U Flask uWSGI requests redis
 WORKDIR /app
 COPY app /app
 COPY cmd.sh /
-RUN pwd; ls;
+# RUN pwd; ls;
 EXPOSE 9090 9191
 USER uwsgi
 CMD ["/cmd.sh"]
