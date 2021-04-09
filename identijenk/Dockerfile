@@ -12,8 +12,7 @@ RUN cd /tmp/ \
     && chmod +x /usr/local/bin/docker \
     && rm -rf /tmp/*
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
-RUN curl -L https://github.com/docker/compose/releases/download/1.29.0/\
-    docker-compose-Linux-x86_64 > /usr/local/bin/docker-compose; \
+RUN curl -L https://github.com/docker/compose/releases/download/1.29.0/docker-compose-Linux-x86_64 > /usr/local/bin/docker-compose; \
     chmod +x /usr/local/bin/docker-compose
 USER jenkins
 COPY plugins.txt /usr/share/jenkins/plugins.txt
